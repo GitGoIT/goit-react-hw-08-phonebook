@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 481px;  
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold; 
+}
+
+.link {
+    display: inline-block;
+    margin: 0 0 0 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+}
+
+.link:global(.active) {
+        font-weight: bold;
+        color: #1a80d4;
+    }

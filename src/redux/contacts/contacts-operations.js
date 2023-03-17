@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import {fetchGetAllContacts, fetchAddContact, fetchDeleteContact } from "../../services/contacts";
+import {fetchGetAllContacts, fetchAddContact, fetchDeleteContact } from "../../shared/api/contacts";
 
 export const fetchContacts = createAsyncThunk(
     'contacts/fetchAll',
@@ -26,15 +26,15 @@ export const addContact = createAsyncThunk(
         }
     },
     {
-        condition: ({name, phone}, { getState }) => {
+        condition: ({name, number}, { getState }) => {
             const { contacts } = getState();
             const normalizedName = name.toLowerCase();
-            const normalizedNumber = phone.toLowerCase();
-            const result = contacts.items.find(({ name, phone }) => {
-               return (name.toLowerCase() === normalizedName || phone.toLowerCase() === normalizedNumber );
+            const normalizedNumber = number.toLowerCase();
+            const result = contacts.items.find(({ name, number }) => {
+               return (name.toLowerCase() === normalizedName || number.toLowerCase() === normalizedNumber );
             })
             if (result) {
-                alert(`Name: "${name}" or number: "${phone}" is already in contacts, please check the contacts list`);
+                alert(`Name: "${name}" or number: "${number}" is already in contacts, please check the contacts list`);
                 return false;
             }
         }

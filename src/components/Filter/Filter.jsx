@@ -15,8 +15,8 @@ const handleFilter = ({ target }) => {
 
   return (
     <div className={css.container}>
-      <label htmlFor="">Find contacts by name</label>
-      <input
+      <label htmlFor="">Find contact</label>
+      <input placeholder='Enter name or number'
         value={filter}
         name="filter"
         onChange={handleFilter}
