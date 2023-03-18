@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[77],{5077:function(e,n,o){o.r(n),o.d(n,{default:function(){return a}});var r="homePage_text__yH4Kf",s=o(2015),t=o(3329),a=function(){return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(s.a,{}),(0,t.jsx)("p",{className:r,children:"Please, press register or login for using phonebook."})]})}}}]);
+//# sourceMappingURL=77.c98b01b3.chunk.js.map
