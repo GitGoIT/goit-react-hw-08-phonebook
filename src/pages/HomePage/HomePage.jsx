@@ -8,7 +8,7 @@ const HomePage = () => {
         <Loader />
         <p className={css.text}>
           Please register or login for using phonebook. Waiting for your
-          decision...
+          action...
         </p>
       </>
     );
