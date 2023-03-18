@@ -1,6 +1,5 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
-// import { ThreeDots } from 'react-loader-spinner';
 import { Loader } from 'shared/Loader/Loader';
 import { PrivateRoute } from './PrivateRoute/PrivateRoute';
 import { PublicRoute } from './PublicRoute/PublicRoute';
