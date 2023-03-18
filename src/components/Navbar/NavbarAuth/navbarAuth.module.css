@@ -1,17 +1,27 @@
 .container {
     display: flex;
     align-items: center;
-    gap: 481px;  
+    gap: 5px;  
 }
 
 .logo {
+    font-size: 26px;
+}
+.logoTitle {
     font-size: 30px;
     font-weight: bold; 
 }
 
+.wrapper{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 440px;
+}
+
 .link {
     display: inline-block;
-    margin: 0 0 0 12px;
+
     text-decoration: none;
     font-size: 18px;
     color: #000;
@@ -21,3 +31,7 @@
         font-weight: bold;
         color: #1a80d4;
     }
+
+.span {
+     font-size:20px;
+}
